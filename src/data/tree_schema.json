@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "JsonTree",
+    "description": "Json tree schema ",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "Node ID",
+            "type": "integer"
+        },
+        "label": {
+            "type": "string"
+        },
+        "childnodes": {
+            "description": "list of child nodes",
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        }
+    },
+    "required": ["id"]
+}
