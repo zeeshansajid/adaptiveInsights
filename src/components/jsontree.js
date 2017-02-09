@@ -68,7 +68,6 @@ class Feature extends Component {
                                 {zipcode.touched && zipcode.error && <div className="error">{zipcode.error}</div>}
                             </div>
 
-                            {this.renderAlert()}
                             <hr />
                             <button action="submit" disabled={pristine || submitting} className="btn btn-primary">Submit</button> &nbsp;
                             <button type="button" disabled={pristine || submitting} className="btn btn-danger" onClick={this.resetFormData.bind(this)}>Cancel</button>
